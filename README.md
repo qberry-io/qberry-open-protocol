@@ -11,8 +11,6 @@
 
 `|` is used to split the `keyvals`.
 
-Notice: Count of the pipes must be odd number.
-
 Example:
 `$|11|HOLA|12|90111122223333444|13|WMXQFV|14|B23a56|15|ONE|16|1.0.0|$`
 
