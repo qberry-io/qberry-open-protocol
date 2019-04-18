@@ -65,6 +65,7 @@ Sample:
 | 11 | Message Type |
 | 12 | Device Id |
 | 13 | Connection Id |
+| 17 | Child (Sensor) Id |
 
 ### Body (HOLA)
 | Key | Description |
@@ -93,6 +94,11 @@ Sample:
 | 218 | GNSS Satellites Used |
 | 219 | GLONASS Satellites Used |
 
+### Body (TEHU)
+| Key | Description | Data Type |
+|--|--|--|
+| 311 | Temperature |number|
+| 312 | Humidity |number|
 
 ## Known issues and missing important functions
 After the development, there are some missing functions showed themselves. They will be solved with the incoming versions.
