@@ -1,4 +1,4 @@
-# Open Qberry Messaging Protocol v1.0.0
+# Open Qberry Messaging Protocol v1.1.0
 
 "Qberry Open Protocol" is a messaging protocol between IOT devices and TCP Socket Servers which is used for messaging in "Qberryduino" project such as [qberryduino-gateway-one](https://github.com/denizkanmaz/qberryduino-gateway-one).
 
