@@ -56,6 +56,11 @@ Sample:
 Sample:
 `$|11|GNSS|12|90111122223333444|13|WMXQFV|211|1|212|39.922790|213|32.838507|214|108.600|215|0.43|216|344.6|217|1|218|5|219|0|$`
 
+### TEHU
+"TEHU" is a message to used to inform the current status of temperature and humidity.
+
+Sample:
+`$|11|TEHU|12|90111122223333444|13|WMXQFV|17|123456789|311|22.20|312|43.80|$`
 
 ## Keys and their descriptions
 
@@ -65,7 +70,7 @@ Sample:
 | 11 | Message Type |
 | 12 | Device Id |
 | 13 | Connection Id |
-| 17 | Child (Sensor) Id |
+| 17 | Child (Endpoint) Id |
 
 ### Body (HOLA)
 | Key | Description |
