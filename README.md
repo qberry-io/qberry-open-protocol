@@ -62,6 +62,12 @@ Sample:
 Sample:
 `$|11|TEHU|12|90111122223333444|13|WMXQFV|17|123456789|311|22.20|312|43.80|$`
 
+### CNBS
+"CNBS" is a message to used to inform can message.
+
+Sample:
+`$|11|CNBS|12|90111122223333444|13|WMXQFV|311|1|412|extid|413|0x18FE8100|414|8|415|0x00;0x7E;0x00;0x00;0x00;0x00;0x00;0x00|$`
+
 ## Keys and their descriptions
 
 ### Header
@@ -104,6 +110,15 @@ Sample:
 |--|--|--|
 | 311 | Temperature |number|
 | 312 | Humidity |number|
+
+### Body (CNBS)
+| Key | Description |
+|--|--|
+| 411 | CAN Device Number |
+| 412 | Id Type |
+| 413 | rxId |
+| 414 | Data length |
+| 415 | Data |
 
 ## Known issues and missing important functions
 After the development, there are some missing functions showed themselves. They will be solved with the incoming versions.
