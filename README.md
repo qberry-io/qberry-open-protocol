@@ -66,7 +66,7 @@ Sample:
 "CNBS" is a message to used to inform can message.
 
 Sample:
-`$|11|CNBS|12|90111122223333444|13|WMXQFV|311|1|412|extid|413|0x18FE8100|414|8|415|0x00;0x7E;0x00;0x00;0x00;0x00;0x00;0x00|$`
+`$|11|CNBS|12|90111122223333444|13|WMXQFV|411|1|412|extid|413|0x18FE8100|414|8|415|0x00;0x7E;0x00;0x00;0x00;0x00;0x00;0x00|$`
 
 ## Keys and their descriptions
 
