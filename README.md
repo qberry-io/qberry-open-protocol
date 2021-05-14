@@ -1,4 +1,4 @@
-# Open Qberry Messaging Protocol v1.0.0
+# Open Qberry Messaging Protocol v1.1.0
 
 "Qberry Open Protocol" is a messaging protocol between IOT devices and TCP Socket Servers which is used for messaging in "Qberryduino" project such as [qberryduino-gateway-one](https://github.com/denizkanmaz/qberryduino-gateway-one).
 
@@ -56,6 +56,17 @@ Sample:
 Sample:
 `$|11|GNSS|12|90111122223333444|13|WMXQFV|211|1|212|39.922790|213|32.838507|214|108.600|215|0.43|216|344.6|217|1|218|5|219|0|$`
 
+### TEHU
+"TEHU" is a message to used to inform the current status of temperature and humidity.
+
+Sample:
+`$|11|TEHU|12|90111122223333444|13|WMXQFV|17|123456789|311|22.20|312|43.80|$`
+
+### CNBS
+"CNBS" is a message to used to inform can message.
+
+Sample:
+`$|11|CNBS|12|90111122223333444|13|WMXQFV|411|1|412|extid|413|0x18FE8100|414|8|415|0x00;0x7E;0x00;0x00;0x00;0x00;0x00;0x00|$`
 
 ## Keys and their descriptions
 
@@ -65,6 +76,7 @@ Sample:
 | 11 | Message Type |
 | 12 | Device Id |
 | 13 | Connection Id |
+| 17 | Child (Endpoint) Id |
 
 ### Body (HOLA)
 | Key | Description |
@@ -93,6 +105,20 @@ Sample:
 | 218 | GNSS Satellites Used |
 | 219 | GLONASS Satellites Used |
 
+### Body (TEHU)
+| Key | Description | Data Type |
+|--|--|--|
+| 311 | Temperature |number|
+| 312 | Humidity |number|
+
+### Body (CNBS)
+| Key | Description |
+|--|--|
+| 411 | CAN Device Number |
+| 412 | Id Type |
+| 413 | rxId |
+| 414 | Data length |
+| 415 | Data |
 
 ## Known issues and missing important functions
 After the development, there are some missing functions showed themselves. They will be solved with the incoming versions.
