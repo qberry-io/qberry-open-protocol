@@ -1,4 +1,4 @@
-# Open Qberry Messaging Protocol v1.1.0
+# Open Qberry Messaging Protocol v1.2.0
 
 "Qberry Open Protocol" is a messaging protocol between IOT devices and TCP Socket Servers which is used for messaging in "Qberryduino" project such as [qberryduino-gateway-one](https://github.com/denizkanmaz/qberryduino-gateway-one).
 
@@ -68,6 +68,12 @@ Sample:
 Sample:
 `$|11|CNBS|12|90111122223333444|13|WMXQFV|411|1|412|extid|413|0x18FE8100|414|8|415|0x00;0x7E;0x00;0x00;0x00;0x00;0x00;0x00|$`
 
+### CSQU
+"CSQU" is used to send Cell Signal Levels
+
+sample:
+`$|11|CSQU|12|90869170032331440|13|MDVEMR|611|25|612|0|$`
+
 ## Keys and their descriptions
 
 ### Header
@@ -119,6 +125,12 @@ Sample:
 | 413 | rxId |
 | 414 | Data length |
 | 415 | Data |
+
+### Body (CSQU)
+| Key | Description |
+|--|--|
+| 611 | RSSI (Received Signal Strength Indication) |
+| 612 | BER  (Bit Error Rate)|
 
 ## Known issues and missing important functions
 After the development, there are some missing functions showed themselves. They will be solved with the incoming versions.
