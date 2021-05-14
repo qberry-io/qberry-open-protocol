@@ -72,7 +72,7 @@ Sample:
 "CSQU" is used to send Cell Signal Levels
 
 sample:
-`$|11|CSQU|12|90869170032331440|13|MDVEMR|611|25|612|0|$`
+`$|11|CSQU|12|90111122223333444|13|MDVEMR|611|25|612|0|$`
 
 ## Keys and their descriptions
 
